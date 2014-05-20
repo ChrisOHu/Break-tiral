@@ -86,6 +86,14 @@ public class MainActivity extends ActionBarActivity {
                 goFullScreen();
             }
         });
+
+        LinearLayout l = (LinearLayout) findViewById(R.id.viewLayout);
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) l.getLayoutParams();
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                findViewById(R.id.textLayout).setVisibility(View.GONE);
+                params.setMargins(0, 0, 0, 0);
+                l.setLayoutParams(params);
+        }
     }
 
     @Override
@@ -103,6 +111,8 @@ public class MainActivity extends ActionBarActivity {
         MenuItem item = menu.findItem(R.id.action_share);
 
         mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
+
+        setCurrentPicture();
 
         return true;
     }
