@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Interview</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_full_view">FullViewActivity</string>
+
+    <!-- Asset Gallery titles & descriptions -->
+    <string name="image1_title">Stinger and Needle</string>
+    <string name="image1_descs">That\'s the butt of a bee against a needle there. Nature wins for terror.</string>
+    <string name="image2_title">Butterfly Egg</string>
+    <string name="image2_descs">Because of course a butterfly lays the most goofy looking eggs imaginable.</string>
+    <string name="image3_title">Cigarette Paper</string>
+    <string name="image3_descs">The blue crystals help it burn. And help you get the cancer.</string>
+    <string name="image4_title">Cucumber</string>
+    <string name="image4_descs">It\'s delicious in salads and nightmares.</string>
+    <string name="image5_title">Floss</string>
+    <string name="image5_descs">Here\'s used dental floss. Because gross.</string>
+    <string name="image6_title">The Fly</string>
+    <string name="image6_descs">Barely looks like Jeff Goldblum at all.</string>
+    <string name="image7_title">Hummingbird Tongue</string>
+    <string name="image7_descs">Yeah, we don\'t get it either.</string>
+    <string name="image8_title">Eyelashes</string>
+    <string name="image8_descs">The human face is utterly disgusting at this magnification.</string>
+    <string name="image9_title">Maggot</string>
+    <string name="image9_descs">He looks kind of happy and barely revolting.</string>
+    <string name="image10_title">Hypodermic</string>
+    <string name="image10_descs">Look at all those blood cells. Mmm, disease.</string>
+    <string name="image11_title">Stubble</string>
+    <string name="image11_descs">This is your razor after you shave. Unless you\'re a ginger and then it\'s full of sadness.</string>
+    <string name="image12_title">Spider</string>
+    <string name="image12_descs">He\'s got his eyes on you all the time.</string>
+    <string name="ops_title">Ops, load failed</string>
+    <string name="ops_desc">as title</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

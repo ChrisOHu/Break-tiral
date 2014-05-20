@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.break_demo.trial.MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:id="@+id/viewLayout"
+        android:layout_marginBottom="20dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/preButton"
+            android:background="@drawable/left1"
+            android:layout_gravity="center_vertical|left"
+            android:contentDescription="leftbutton" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="picture"
+            android:layout_marginRight="52dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextButton"
+            android:background="@drawable/right1"
+            android:layout_gravity="center_vertical|right"
+            android:contentDescription="rightbutton"
+            android:layout_marginLeft="-55dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:id="@+id/textLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/imageTitle"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|top"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/imageDescs"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
