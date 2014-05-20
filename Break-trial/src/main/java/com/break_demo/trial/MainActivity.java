@@ -103,13 +103,7 @@ public class MainActivity extends ActionBarActivity {
         MenuItem item = menu.findItem(R.id.action_share);
 
         mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(item);
-        if (mShareActionProvider != null) {
-            Intent i = new Intent();
-            i.setAction(Intent.ACTION_SEND);
-            i.setType("text/plain");
-            i.putExtra(Intent.EXTRA_TEXT, "Share this stuff");
-            mShareActionProvider.setShareIntent(i);
-        }
+
         return true;
     }
 
@@ -174,6 +168,15 @@ public class MainActivity extends ActionBarActivity {
         //((ImageView) findViewById(R.id.imageView)).setImageDrawable(d);
         //((LayerDrawable)((ImageView) findViewById(R.id.imageView)).getDrawable())
         //        .setDrawableByLayerId(0, d);
+
+        if (mShareActionProvider != null) {
+            Intent i = new Intent();
+            i.setAction(Intent.ACTION_SEND);
+            i.setType("image/*");
+            i.putExtra(Intent.EXTRA_STREAM,
+                    Uri.parse("content://" + MyContentProvider.CONTENT_URI + "/" + myGalleryList.getCurrentPath()));
+            mShareActionProvider.setShareIntent(i);
+        }
     }
 
     //TODO: these might go to bitmap processing factory

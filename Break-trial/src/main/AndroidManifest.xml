@@ -11,11 +11,14 @@
             android:name="com.break_demo.trial.MainActivity"
             android:label="@string/app_name"
             android:logo="@drawable/home" >
-            <!--intent-filter>
+
+            <!--
+            intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter-->
+            </intent-filter
+            -->
         </activity>
         <activity
             android:name="com.break_demo.trial.FullViewActivity"
@@ -26,14 +29,22 @@
         </activity>
         <activity
             android:name="com.break_demo.trial.SplashActivity"
-            android:label="@string/title_activity_splash"
-            android:theme="@style/FullscreenTheme">
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.break_demo.trial.MyContentProvider"
+            android:authorities="com.break_demo.trial"
+            android:grantUriPermissions="true"
+            android:enabled="true"
+            android:exported="true" >
+        </provider>
     </application>
 
 </manifest>
