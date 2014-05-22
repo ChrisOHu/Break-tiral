@@ -35,5 +35,13 @@
     <string name="ops_desc">as title</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="nav_login">Log In</string>
+    <string name="nav_gallery">Gallery</string>
+    <string name="nav_posts">Posts</string>
+    <string name="nav_take_photo">Take a photo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
 
 </resources>

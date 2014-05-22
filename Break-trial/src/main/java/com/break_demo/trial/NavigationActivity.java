@@ -1,6 +1,7 @@
 package com.break_demo.trial;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -49,23 +50,45 @@ public class NavigationActivity extends ActionBarActivity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
+        /*
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
+        */
+
+        switch (position) {
+            case 0:
+                //startActivity(new Intent(this, LoginActivity.class));
+                break;
+            case 1:
+                //TODO: name -> GalleryAc...
+                startActivity(new Intent(this, MainActivity.class));
+                break;
+            case 2:
+                //startActivity(new Intent(this, PostsActivity.class));
+                break;
+            case 3:
+                //startActivity(new Intent(this, TakePhotoActivity.class));
+                break;
+        }
     }
 
+    //TODO: put intents to a static map
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.nav_login);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.nav_gallery);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getString(R.string.nav_posts);
+                break;
+            case 4:
+                mTitle = getString(R.string.nav_take_photo);
                 break;
         }
     }

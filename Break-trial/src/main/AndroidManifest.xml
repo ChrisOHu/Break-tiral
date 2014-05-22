@@ -41,10 +41,15 @@
         <provider
             android:name="com.break_demo.trial.MyContentProvider"
             android:authorities="com.break_demo.trial"
-            android:grantUriPermissions="true"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true"
+            android:grantUriPermissions="true" >
         </provider>
+
+        <activity
+            android:name="com.break_demo.trial.NavigationActivity"
+            android:label="@string/title_activity_navigation" >
+        </activity>
     </application>
 
 </manifest>

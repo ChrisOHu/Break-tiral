@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.support.v7.widget.ShareActionProvider;
@@ -29,7 +30,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends NavigationActivity {
 
     private MyGalleryList myGalleryList;
     private ShareActionProvider mShareActionProvider;
@@ -37,7 +38,10 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
+
+        View v = getLayoutInflater().inflate(R.layout.activity_main, null);
+        ((FrameLayout) findViewById(R.id.container)).addView(v);
 
         myGalleryList = MyGalleryList.getInstance(getApplicationContext());
         myGalleryList.loadGalleryFromAss("gallery");
