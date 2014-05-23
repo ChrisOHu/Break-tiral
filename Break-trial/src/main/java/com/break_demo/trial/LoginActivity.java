@@ -79,13 +79,6 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
                     signIn();
                 }
             });
-            mPlusSignInButton.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    return true;
-                }
-            });
         } else {
             // Don't offer G+ sign in if the app's version is too low to support Google Play
             // Services.
@@ -114,6 +107,9 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             @Override
             public void onClick(View view) {
                 attemptLogin();
+                //TODO: let's get it real
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
             }
         });
 

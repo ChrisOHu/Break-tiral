@@ -60,26 +60,39 @@ public class NavigationActivity extends ActionBarActivity
 
         switch (position) {
             case 0:
-                startActivity(new Intent(this, LoginActivity.class));
+                //TODO: name -> GalleryAc...
+                if (!(this instanceof MainActivity)) {
+                    startActivity(new Intent(this, MainActivity.class));
+                    finish();
+                }
                 break;
             case 1:
-                //TODO: name -> GalleryAc...
-                startActivity(new Intent(this, MainActivity.class));
+                /*
+                if (!(this instanceof PostsActivity)) {
+                    startActivity(new Intent(this, PostsActivity.class));
+                    finish();
+                }*/
                 break;
             case 2:
-                //startActivity(new Intent(this, PostsActivity.class));
+                /*
+                if (!(this instanceof TakePhotoActivity)) {
+                    startActivity(new Intent(this, TakePhotoActivity.class));
+                    finish();
+                }*/
                 break;
             case 3:
-                //startActivity(new Intent(this, TakePhotoActivity.class));
+                //logout & goto login view
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
                 break;
         }
     }
 
-    //TODO: put intents to a static map
+    //TODO: rm this
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.nav_login);
+                mTitle = getString(R.string.nav_logout);
                 break;
             case 2:
                 mTitle = getString(R.string.nav_gallery);
