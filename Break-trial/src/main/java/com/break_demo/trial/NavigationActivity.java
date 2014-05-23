@@ -60,7 +60,7 @@ public class NavigationActivity extends ActionBarActivity
 
         switch (position) {
             case 0:
-                //startActivity(new Intent(this, LoginActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 break;
             case 1:
                 //TODO: name -> GalleryAc...
