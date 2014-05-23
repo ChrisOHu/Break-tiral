@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.break_demo.trial.TakePhotoActivity" >
+
+    <item
+        android:id="@+id/action_share_photo"
+        android:title="Share"
+        app:showAsAction="always"
+        app:actionProviderClass=
+            "android.support.v7.widget.ShareActionProvider" />
+</menu>
