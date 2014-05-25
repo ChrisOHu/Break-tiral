@@ -64,6 +64,10 @@
             android:name="com.break_demo.trial.TakePhotoActivity"
             android:label="@string/title_activity_take_photo" >
         </activity>
+        <activity
+            android:name="com.break_demo.trial.PostsActivity"
+            android:label="@string/title_activity_posts" >
+        </activity>
     </application>
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
